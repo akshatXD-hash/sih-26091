@@ -105,16 +105,7 @@ export default function HomePage() {
 
         <div className="page-shell relative z-10 flex min-h-[calc(100vh-73px)] items-center py-16 sm:py-20">
           <div className="max-w-4xl">
-            {/* SIH Banner */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#e6c99a]/40 bg-black/60 px-3.5 py-1.5 backdrop-blur-md">
-              <span className="inline-block size-2 rounded-full bg-[#e6c99a] animate-pulse" />
-              <span className="text-[11px] font-black uppercase tracking-wider text-[#e6c99a]">
-                Smart India Hackathon 2026 · Problem Statement SIH-26091
-              </span>
-              <span className="hidden text-[10px] text-white/60 sm:inline">| MoSJE Software Track</span>
-            </div>
-
-            <h1 className="mt-6 max-w-4xl text-4xl font-semibold leading-[1.08] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
+            <h1 className="max-w-4xl text-4xl font-semibold leading-[1.08] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
               AI-driven local advisory &<br />
               <span className="editorial-serif text-[#e6c99a]">financial structuring</span><br />
               for rural micro-enterprises.
