@@ -11,12 +11,14 @@ interface AppShellProps {
 }
 
 const applicantNav = [
-  ["01", "Eligibility", "/eligibility"],
-  ["02", "Schemes", "/schemes"],
-  ["03", "Branches", "/branches"],
-  ["04", "Scheme help", "/assistant"],
-  ["05", "Application", "/applications/new"],
-  ["06", "Language", "/language"],
+  ["01", "Business Advisory", "/advisory"],
+  ["02", "Financial Structuring", "/structuring"],
+  ["03", "Eligibility", "/eligibility"],
+  ["04", "Schemes", "/schemes"],
+  ["05", "Bank Branches", "/branches"],
+  ["06", "Scheme Help", "/assistant"],
+  ["07", "Application", "/applications/new"],
+  ["08", "Language", "/language"],
 ] as const;
 
 export function AppShell({ children, user, mode }: AppShellProps) {
@@ -30,7 +32,7 @@ export function AppShell({ children, user, mode }: AppShellProps) {
             : []),
         ] as const)
       : applicantNav;
-  const home = mode === "admin" ? "/admin" : "/eligibility";
+  const home = mode === "admin" ? "/admin" : "/advisory";
 
   return (
     <div className="relative min-h-screen bg-[#F7F3E9] text-[#191917] selection:bg-[#B85228] selection:text-white lg:grid lg:grid-cols-[270px_1fr]">
@@ -54,9 +56,13 @@ export function AppShell({ children, user, mode }: AppShellProps) {
       {/* Sidebar Navigation */}
       <aside className="relative z-20 hidden min-h-screen border-r border-[#1E3A2B]/15 bg-[#FAF6EE]/90 p-7 backdrop-blur-md lg:sticky lg:top-0 lg:flex lg:h-screen lg:flex-col">
         <BrandMark href={home} />
-        <div className="mt-14">
+        <div className="mt-4 flex items-center gap-2 rounded-md border border-[#1E3A2B]/15 bg-[#1E3A2B]/5 px-3 py-1.5 text-[10px] font-bold text-[#1E3A2B]">
+          <span className="inline-block size-2 shrink-0 rounded-full bg-[#B85228] animate-pulse" />
+          <span>SIH-26091 · MoSJE Software Track</span>
+        </div>
+        <div className="mt-8">
           <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#1E3A2B]/50">
-            <T>{mode === "admin" ? "Officer workspace" : "Your application"}</T>
+            <T>{mode === "admin" ? "Officer workspace" : "Rural Micro-Enterprise Portal"}</T>
           </p>
           <nav className="mt-5 border-t border-[#1E3A2B]/15">
             {navigation.map(([, label, href]) => (

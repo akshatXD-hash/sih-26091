@@ -1,26 +1,35 @@
-# Kaarva — Intelligent Public Credit & Scheme Matching Platform
+# Kaarva (कारवाँ) — AI-Driven Hyper-Local Business Advisory & Financial Structuring Platform
 
-> **Public Credit, Decoded.**  
-> *“AI assists. Rules decide.”*
+> **Smart India Hackathon 2026 — Problem Statement SIH-26091**  
+> **Ministry:** Ministry of Social Justice and Empowerment (MoSJE)  
+> **Domain / Track:** Agriculture, FoodTech & Rural Development / Software  
+> *“Empowering Rural Micro-Entrepreneurs: AI Advises. Rules Decide. Credit Delivers.”*
 
-Kaarva is a fullstack government loan scheme discovery, matching, and application enablement platform built for the Smart India Hackathon (SIH 2026). It bridges the gap between citizens seeking microfinance, term loans, or education credit and public lending institutions.
+Kaarva is an AI-driven, hyper-local business advisory and financial structuring platform purpose-built for rural micro-entrepreneurs, artisans, and marginalized beneficiaries under the aegis of the Ministry of Social Justice and Empowerment (MoSJE).
 
-The platform combines **deterministic, explainable rule matching**, **PostGIS geospatial branch intelligence**, **multilingual voice-to-form extraction (Groq Whisper)**, **skill readiness action planning**, **document verification & OCR**, and an **audited officer review portal**.
+Addressing the core challenge of **SIH-26091**, the platform replaces anecdotal decision-making with institutional-grade data consulting:
+1. **Hyper-Local Market Advisory (`/advisory`)**: Evaluates village- and block-level market demand, APMC Mandi price benchmarks, saturation capacity, and seasonal cash-flow risks.
+2. **Personalized Financial Structuring (`/structuring`)**: Intelligently structures project costs into promoter equity (as low as 5%), MoSJE back-ended capital subsidies (up to 35% under NSFDC, NBCFDC, NSKFDC, NDFDC, PM Vishwakarma, and PMEGP), and debt portions.
+3. **Cash-Flow Aligned Rural Amortization**: Eliminates debt stress by offering repayment schedules aligned with agricultural harvest cycles (Kharif/Rabi) or weekly village haats, with up to 6 months setup moratorium.
+4. **Deterministic Scheme & Bank Matching (`/schemes`, `/branches`)**: 100% explainable rule evaluation backed by 21,000+ geo-located bank branches with audited scheme support.
+5. **Voice-First & Gram Udyog Mitr Assistance (`/asha-worker`)**: Multilingual voice auto-fill (Groq Whisper) in 11+ Indian languages and an audited field worker workspace for digitally illiterate rural beneficiaries.
 
 ---
 
 ## Table of Contents
 
+- [Problem Statement (SIH-26091) Alignment](#problem-statement-sih-26091-alignment)
 - [Core Philosophy & Architecture](#core-philosophy--architecture)
 - [Complete User Journey & Route Map](#complete-user-journey--route-map)
 - [Key Features](#key-features)
-  - [1. Multilingual Voice & Conversational Assistant](#1-multilingual-voice--conversational-assistant)
-  - [2. Explainable Rule Matching & Scheme Discovery](#2-explainable-rule-matching--scheme-discovery)
-  - [3. Geospatial Branch Locator & Directory Intelligence](#3-geospatial-branch-locator--directory-intelligence)
-  - [4. Dynamic Action Plan & Skill Readiness](#4-dynamic-action-plan--skill-readiness)
-  - [5. Financial Modeling & Provisional Pre-Sanction PDF](#5-financial-modeling--provisional-pre-sanction-pdf)
-  - [6. Secure Document Uploads & OCR Evidence Extraction](#6-secure-document-uploads--ocr-evidence-extraction)
-  - [7. Administrative Officer Dashboard & Audit State Machine](#7-administrative-officer-dashboard--audit-state-machine)
+  - [1. Hyper-Local Business Advisory & Market Intelligence](#1-hyper-local-business-advisory--market-intelligence)
+  - [2. Personalized Financial Structuring & Debt Amortization](#2-personalized-financial-structuring--debt-amortization)
+  - [3. Multilingual Voice & Conversational Assistant](#3-multilingual-voice--conversational-assistant)
+  - [4. Explainable Rule Matching & MoSJE Scheme Discovery](#4-explainable-rule-matching--mosje-scheme-discovery)
+  - [5. Geospatial Branch Locator & Directory Intelligence](#5-geospatial-branch-locator--directory-intelligence)
+  - [6. Gram Udyog Mitr / Field Facilitator Workspace](#6-gram-udyog-mitr--field-facilitator-workspace)
+  - [7. Financial Modeling & Bank Pre-Sanction DPR PDF](#7-financial-modeling--bank-pre-sanction-dpr-pdf)
+  - [8. Administrative Officer Dashboard & Audit State Machine](#8-administrative-officer-dashboard--audit-state-machine)
 - [Supported Schemes & Categories](#supported-schemes--categories)
 - [Technology Stack](#technology-stack)
 - [Project Architecture & Directory Layout](#project-architecture--directory-layout)

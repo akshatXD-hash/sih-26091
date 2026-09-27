@@ -1,6 +1,7 @@
 {
   "name": "sih2k26",
   "version": "0.1.0",
+  "description": "Kaarva — AI-Driven Hyper-Local Business Advisory and Financial Structuring Assistant for Rural Micro-Entrepreneurs (SIH 2026 Problem Statement 26091 - MoSJE)",
   "private": true,
   "scripts": {
     "dev": "next dev",

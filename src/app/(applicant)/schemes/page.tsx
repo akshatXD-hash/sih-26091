@@ -102,7 +102,15 @@ export default async function SchemesPage({
 
   return (
     <div>
-      <span className="eyebrow"><T>Scheme finder</T></span>
+      <div className="mb-4 flex flex-wrap gap-2">
+        <Link href="/advisory" className="inline-flex items-center gap-1.5 rounded-lg border border-[#1E3A2B]/15 bg-white px-3 py-1.5 text-xs font-bold text-[#1E3A2B] hover:bg-[#FAF6EE] shadow-2xs">
+          <span>📊 Hyper-Local Business Advisory</span>
+        </Link>
+        <Link href="/structuring" className="inline-flex items-center gap-1.5 rounded-lg border border-[#1E3A2B]/15 bg-white px-3 py-1.5 text-xs font-bold text-[#1E3A2B] hover:bg-[#FAF6EE] shadow-2xs">
+          <span>💰 Financial Structuring Assistant</span>
+        </Link>
+      </div>
+      <span className="eyebrow"><T>Scheme finder · SIH-26091</T></span>
       <div className="mt-4 flex flex-wrap items-end justify-between gap-4">
         <div>
           <h1 className="text-4xl font-bold tracking-tight text-slate-950">

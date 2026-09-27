@@ -25,7 +25,7 @@ export function loginDestination(role: string | null | undefined, next: unknown)
   try {
     const url = new URL(next, "https://local.invalid");
     if (url.origin !== "https://local.invalid") return fallback;
-    const routes = role === "ASHA_WORKER" ? ["/asha-worker"] : hasAdminAccess(role) ? ["/admin"] : hasApplicantAccess(role) ? ["/eligibility", "/schemes", "/branches", "/applications", "/assistant"] : [];
+    const routes = role === "ASHA_WORKER" ? ["/asha-worker"] : hasAdminAccess(role) ? ["/admin"] : hasApplicantAccess(role) ? ["/eligibility", "/advisory", "/structuring", "/schemes", "/branches", "/applications", "/assistant"] : [];
     if (!routes.some(route => url.pathname === route || url.pathname.startsWith(route + "/"))) return fallback;
     if (role === UserRole.CHANNEL_PARTNER && (url.pathname === "/admin/branch-support" || url.pathname.startsWith("/admin/branch-support/"))) return fallback;
     return url.pathname + url.search + url.hash;
