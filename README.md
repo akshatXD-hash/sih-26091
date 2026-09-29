@@ -50,7 +50,7 @@ Addressing the core mandate of **SIH Problem Statement 26091** for the **Ministr
 2. **Personalized Financial Structuring (`/structuring`)**: Automatically transforms available margin capital ($10\%$) into total project feasibility ($100\%$), concessional loan capacity ($90\%$), and MoSJE back-ended capital subsidies (up to $35\%$ for SC, ST, OBC, Safai Karamcharis, Divyangjan, and Rural Women).
 3. **Cash-Flow Aligned Rural Amortization**: Eliminates debt stress by generating custom repayment schedules aligned with harvest cycles or weekly village haats, factoring in 3- to 6-month moratorium grace periods.
 4. **Deterministic Scheme & PostGIS Branch Discovery (`/schemes`, `/branches`)**: 100% explainable rule evaluation backed by 21,000+ geo-located bank branches ranked by distance, fund quota, and NPA health metrics.
-5. **Voice-First & Gram Udyog Mitr Assistance (`/asha-worker`)**: Groq Whisper voice auto-fill across 11+ Indian languages and an audited field-worker portal for digitally illiterate beneficiaries.
+5. **Voice-First & Gram Udyog Mitr Assistance (`/asha-worker`)**: AssemblyAI multilingual voice auto-fill across 11+ Indian languages and an audited field-worker portal for digitally illiterate beneficiaries.
 
 ---
 
@@ -102,7 +102,7 @@ Use the structured content below to populate the official 6-slide SIH presentati
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
 │ 1. ACCESS & INPUT LAYER                                                                │
-│    • Multilingual Voice (11+ Indic Languages) via Groq Whisper Large v3 Turbo          │
+│    • Multilingual Voice (11+ Indic Languages) via AssemblyAI Speech Intelligence       │
 │    • Web & Mobile Responsive UI (React 19, Next.js 16 App Router, Tailwind CSS v4)    │
 │    • Multimodal Document Uploads (PDF / Images via Cloudinary Signed URLs)             │
 │    • Gram Udyog Mitr & ASHA Assisted Field Intake Workspace                            │
@@ -136,7 +136,7 @@ Use the structured content below to populate the official 6-slide SIH presentati
 * **Frontend & Fullstack Core:** Next.js 16.3.2 (App Router), React 19, TypeScript, Tailwind CSS v4.
 * **Database & Geospatial:** PostgreSQL (Neon Serverless), Prisma ORM 7.10, PostGIS spatial indexing (`ST_DWithin`, GiST, GIN Trigram).
 * **AI/ML & Microservices:** Python 3.11, FastAPI, Pydantic v2, Google Gemini 2.5 Flash, PyMuPDF (300 DPI pre-rendering), Pillow.
-* **Speech & Voice:** Groq Whisper Large v3 Turbo with local fallback and silence hallucination suppression.
+* **Speech & Voice:** AssemblyAI Speech-to-Text (Universal-1 / Conformer-2) with local fallback and silence suppression.
 * **Security & Storage:** Auth.js v5 (NextAuth), Cloudinary authenticated delivery with 5-minute signed URLs.
 * **Document Engine:** `pdf-lib` server-side binary pre-sanction DPR generation.
 
@@ -147,14 +147,14 @@ Use the structured content below to populate the official 6-slide SIH presentati
 #### 1. Feasibility Analysis
 * **Technology Readiness Level (TRL):** **TRL-7 (Fully functional prototype demonstrated in operational environment)** with 25+ automated test suites and 175+ passing unit/integration tests.
 * **Resource Optimization:** Ultra-lightweight FastAPI microservice ($\le 250\text{ MB}$ RAM footprint) + Serverless PostgreSQL database.
-* **Sub-Second Latency:** Streaming server components + Groq Whisper sub-second voice transcription + Gemini 2.5 Flash inference.
+* **Sub-Second Latency:** Streaming server components + AssemblyAI sub-second voice transcription + Gemini 2.5 Flash inference.
 * **Scalability & Deployability:** Fully containerized via Docker; deployable on Government Cloud (NIC, MeghRaj), Render, or Vercel.
 
 #### 2. Potential Challenges & Mitigation Strategies
 | Potential Risk / Challenge | Technical Mitigation in Kaarva |
 | :--- | :--- |
 | **LLM Hallucinations in Financial Rules** | **Strict Boundary Separation:** AI models *only* extract unstructured text and explain concepts. All eligibility checks, loan math, and subsidy rates are hard-coded in deterministic, auditable TypeScript code. |
-| **Dialects, Accents & Rural Slang** | Groq Whisper Large v3 Turbo model trained on diverse Indian speech corpora, backed by silence suppression and applicant confirmation gates. |
+| **Dialects, Accents & Rural Slang** | AssemblyAI multilingual speech intelligence trained on diverse Indian dialects, backed by silence suppression and applicant confirmation gates. |
 | **Blurry / Low-Quality Mobile Scans** | PyMuPDF renders PDFs at 300 DPI, followed by Pillow contrast enhancement and Gemini Multimodal Vision confidence thresholding ($>0.85$). |
 | **Privacy & PII Data Exposure** | Zero storage of raw voice audio or transcript PII in logs. Documents are accessible only via short-lived (5-minute) signed Cloudinary URLs. |
 | **Outdated Scheme Information** | Audited Officer Portal (`/admin/branch-support`) where bank managers verify branch-level scheme support backed by 90-day expiring HTTPS proofs. |
@@ -202,7 +202,7 @@ Use the structured content below to populate the official 6-slide SIH presentati
 * **Geospatial Standards:** Open Source Geospatial Foundation (OSGeo) — PostGIS Spatial Indexing (`ST_DWithin`, GiST).
 * **Multimodal AI & Speech:**
   * Google Gemini 2.5 Flash Multimodal Vision & Controlled JSON Schema Specification (2025–2026).
-  * OpenAI / Radford et al.: *“Robust Speech Recognition via Large-Scale Weak Supervision (Whisper)”*.
+  * AssemblyAI Speech Intelligence & Multi-Dialect Foundation Models.
 * **Development Economics & Policy Research:**
   * World Bank & NITI Aayog Reports: *“Digital Financial Inclusion and Credit Enablement for Informal Micro-Enterprises in India”* (2023–2025).
 
@@ -232,7 +232,7 @@ Use the structured content below to populate the official 6-slide SIH presentati
 * **Smart Rural Radius Expansion:** Automatically expands search radius up to 100 km if no immediate branch is found within the village boundary.
 
 ### Module 4: Multilingual Voice & Multimodal Certificate OCR
-* **Voice Auto-Fill (`/api/voice/auto-fill`):** Transcribes user audio in 11+ languages via Groq Whisper and maps transcript text into structured applicant parameters (`project_category`, `requested_amount`, `annual_income`, `trade`).
+* **Voice Auto-Fill (`/api/voice/auto-fill`):** Transcribes user audio in 11+ languages via AssemblyAI and maps transcript text into structured applicant parameters (`project_category`, `requested_amount`, `annual_income`, `trade`).
 * **Multimodal Certificate OCR (`/applications/new`):** Processes scanned PDFs and mobile photos of Caste & Income certificates via Gemini Multimodal Vision, displaying suggested fields alongside side-by-side preview for officer review.
 
 ### Module 5: Field Facilitator / Gram Udyog Mitr Workspace (`/asha-worker`)
@@ -255,7 +255,7 @@ Use the structured content below to populate the official 6-slide SIH presentati
 | **Database & ORM** | PostgreSQL (Neon), Prisma ORM 7.10 | Serverless Postgres with PostGIS geography extension |
 | **Geospatial Engine** | PostGIS, Leaflet 1.9.4 | `ST_DWithin` spatial indexing, GiST spatial queries |
 | **Authentication** | Auth.js (NextAuth v5 beta), bcryptjs | Role-based session security (`APPLICANT`, `ADMIN`, `REVIEWER`) |
-| **Speech-to-Text** | Groq Whisper Large v3 Turbo | Multilingual audio transcription with local mock fallback |
+| **Speech-to-Text** | AssemblyAI Speech Intelligence | Multilingual audio transcription with local mock fallback |
 | **AI / ML Microservice** | Python 3.11, FastAPI, Gemini 2.5 Flash | Intent extraction, jargon simplification, policy Q&A, OCR |
 | **Document Storage** | Cloudinary SDK | Authenticated delivery mode with 5-minute signed URLs |
 | **PDF Generation** | `pdf-lib` | Server-rendered bank pre-sanction DPR letters |
