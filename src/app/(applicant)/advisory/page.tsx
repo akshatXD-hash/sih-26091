@@ -13,7 +13,7 @@ export default async function BusinessAdvisoryPage() {
   return (
     <div className="mx-auto max-w-6xl">
       <div className="mb-6">
-        <span className="eyebrow">MoSJE Rural Market Intelligence</span>
+        <span className="eyebrow">Rural Market Intelligence</span>
         <h1 className="mt-2 text-3xl font-extrabold tracking-tight text-[#191917] sm:text-4xl">
           <T>Hyper-Local Rural Business Advisory</T>
         </h1>

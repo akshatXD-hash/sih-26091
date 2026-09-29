@@ -14,7 +14,7 @@ export default async function FinancialStructuringPage() {
   return (
     <div className="mx-auto max-w-6xl">
       <div className="mb-6">
-        <span className="eyebrow">MoSJE Rural Financial Structuring</span>
+        <span className="eyebrow">Rural Financial Structuring</span>
         <h1 className="mt-2 text-3xl font-extrabold tracking-tight text-[#191917] sm:text-4xl">
           <T>Personalized Financial Structuring</T>
         </h1>
