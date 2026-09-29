@@ -3,7 +3,7 @@ import { BusinessAdvisoryStudio } from "@/components/advisory/BusinessAdvisorySt
 import { requireApplicant } from "@/lib/auth/guards";
 
 export const metadata = {
-  title: "Hyper-Local Business Advisory | Kaarva (SIH-26091)",
+  title: "Hyper-Local Business Advisory | Kaarva",
   description: "AI-driven market demand analysis, mandi price benchmarking, and unit economics for rural micro-entrepreneurs.",
 };
 
@@ -13,7 +13,7 @@ export default async function BusinessAdvisoryPage() {
   return (
     <div className="mx-auto max-w-6xl">
       <div className="mb-6">
-        <span className="eyebrow">Smart India Hackathon 2026 · PS SIH-26091</span>
+        <span className="eyebrow">MoSJE Rural Market Intelligence</span>
         <h1 className="mt-2 text-3xl font-extrabold tracking-tight text-[#191917] sm:text-4xl">
           <T>Hyper-Local Rural Business Advisory</T>
         </h1>

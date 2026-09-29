@@ -56,10 +56,6 @@ export function AppShell({ children, user, mode }: AppShellProps) {
       {/* Sidebar Navigation */}
       <aside className="relative z-20 hidden min-h-screen border-r border-[#1E3A2B]/15 bg-[#FAF6EE]/90 p-7 backdrop-blur-md lg:sticky lg:top-0 lg:flex lg:h-screen lg:flex-col">
         <BrandMark href={home} />
-        <div className="mt-4 flex items-center gap-2 rounded-md border border-[#1E3A2B]/15 bg-[#1E3A2B]/5 px-3 py-1.5 text-[10px] font-bold text-[#1E3A2B]">
-          <span className="inline-block size-2 shrink-0 rounded-full bg-[#B85228] animate-pulse" />
-          <span>SIH-26091</span>
-        </div>
         <div className="mt-8">
           <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#1E3A2B]/50">
             <T>{mode === "admin" ? "Officer workspace" : "Rural Micro-Enterprise Portal"}</T>

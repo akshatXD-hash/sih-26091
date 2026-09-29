@@ -110,7 +110,7 @@ export default async function SchemesPage({
           <span>💰 Financial Structuring Assistant</span>
         </Link>
       </div>
-      <span className="eyebrow"><T>Scheme finder · SIH-26091</T></span>
+      <span className="eyebrow"><T>MoSJE Scheme Catalogue</T></span>
       <div className="mt-4 flex flex-wrap items-end justify-between gap-4">
         <div>
           <h1 className="text-4xl font-bold tracking-tight text-slate-950">

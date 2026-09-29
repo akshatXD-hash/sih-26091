@@ -16,7 +16,7 @@ export default async function EligibilityPage() {
           <span>💰 Financial Structuring Assistant</span>
         </Link>
       </div>
-      <span className="eyebrow">Your details · SIH-26091 (MoSJE)</span>
+      <span className="eyebrow">Your details · MoSJE Advisory</span>
       <h1 className="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight text-[#191917] leading-tight"> <T>Tell us what you need funding for</T> </h1>
       <p className="mt-2.5 text-sm sm:text-base text-[#1E3A2B]/75 leading-relaxed">Your answers help us evaluate scheme eligibility and structure your financing. You can review everything before applying.</p>
       <div className="mt-8"><EligibilityWizard /></div>

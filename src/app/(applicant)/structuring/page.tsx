@@ -4,7 +4,7 @@ import { FinancialStructuringStudio } from "@/components/structuring/FinancialSt
 import { requireApplicant } from "@/lib/auth/guards";
 
 export const metadata = {
-  title: "Personalized Financial Structuring | Kaarva (SIH-26091)",
+  title: "Personalized Financial Structuring | Kaarva",
   description: "Automated capital stack structuring, promoter equity optimization, and MoSJE subsidy mapping for rural micro-entrepreneurs.",
 };
 
@@ -14,7 +14,7 @@ export default async function FinancialStructuringPage() {
   return (
     <div className="mx-auto max-w-6xl">
       <div className="mb-6">
-        <span className="eyebrow">Smart India Hackathon 2026 · PS SIH-26091</span>
+        <span className="eyebrow">MoSJE Rural Financial Structuring</span>
         <h1 className="mt-2 text-3xl font-extrabold tracking-tight text-[#191917] sm:text-4xl">
           <T>Personalized Financial Structuring</T>
         </h1>

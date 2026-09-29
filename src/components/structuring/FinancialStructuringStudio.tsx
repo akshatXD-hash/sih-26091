@@ -55,7 +55,7 @@ export function FinancialStructuringStudio() {
           <div>
             <div className="flex items-center gap-2">
               <span className="rounded-md bg-[#1E3A2B] px-2.5 py-1 text-[11px] font-black uppercase tracking-wider text-[#F7F3E9]">
-                SIH-26091
+                MoSJE Financial Engine
               </span>
               <span className="text-xs font-bold uppercase tracking-wider text-[#B85228]">
                 Ministry of Social Justice & Empowerment

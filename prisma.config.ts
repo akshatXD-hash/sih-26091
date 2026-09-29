@@ -13,7 +13,7 @@ export default defineConfig({
   datasource: {
     // Prefer Neon's direct URL for CLI operations; fall back to DATABASE_URL
     // when a single direct connection string is used in development.
-    url: process.env.DIRECT_URL ?? env("DATABASE_URL"),
+    url: process.env.DIRECT_URL ?? process.env.DATABASE_URL ?? "postgresql://placeholder:placeholder@localhost:5432/neondb",
     ...(shadowDatabaseUrl ? { shadowDatabaseUrl } : {}),
   },
 });

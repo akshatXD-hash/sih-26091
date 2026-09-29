@@ -1,6 +1,6 @@
 /**
  * Hyper-Local Business Advisory and Market Intelligence Engine for Rural Micro-Entrepreneurs.
- * Aligned with Smart India Hackathon 2026 - Problem Statement 26091 (Ministry of Social Justice and Empowerment).
+ * Ministry of Social Justice and Empowerment (MoSJE).
  */
 
 export interface RuralTradeProfile {

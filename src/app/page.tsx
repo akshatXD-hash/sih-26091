@@ -91,7 +91,7 @@ export default function HomePage() {
             <Link className="text-white/70 hover:text-white" href="/advisory">Business Advisory</Link>
             <Link className="text-white/70 hover:text-white" href="/structuring">Financial Structuring</Link>
             <Link className="text-white/70 hover:text-white" href="/schemes">Schemes</Link>
-            <a className="text-white/70 hover:text-white" href="#framework">PS 26091 Architecture</a>
+            <a className="text-white/70 hover:text-white" href="#framework">Solution Architecture</a>
           </div>
           <div className="flex items-center gap-2">
             <Link className="whitespace-nowrap rounded-md px-3 py-2 text-sm font-bold text-white hover:bg-white/10" href="/login">
@@ -147,11 +147,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4 Pillars of SIH-26091 */}
+      {/* 4 Pillars of the Platform */}
       <section className="paper-grid page-shell py-20 sm:py-28" id="framework">
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
-            <span className="eyebrow">The 4-Step Solution · SIH-26091</span>
+            <span className="eyebrow">The 4-Step Solution · MoSJE Initiative</span>
             <h2 className="mt-4 text-3xl font-semibold leading-[1.15] tracking-tight sm:text-4xl">
               From village market demand<br />
               <span className="editorial-serif">to a sanctioned loan.</span>
@@ -268,7 +268,7 @@ export default function HomePage() {
                 Start Rural Business Evaluation
               </Link>
               <p className="mt-4 text-xs font-bold uppercase tracking-[0.15em] text-black/50">
-                100% Free for Rural Entrepreneurs · SIH 2026 Solution
+                100% Free for Rural Entrepreneurs · MoSJE Initiative
               </p>
             </div>
           </div>
@@ -280,7 +280,7 @@ export default function HomePage() {
         <BrandMark inverse />
         <div className="text-right">
           <p className="text-xs uppercase tracking-[0.15em] text-white/50">
-            Smart India Hackathon 2026 · Problem Statement SIH-26091
+            Rural Micro-Enterprise Advisory & Financial Structuring Platform
           </p>
           <p className="text-[10px] text-white/40 mt-1">
             Ministry of Social Justice and Empowerment (MoSJE)

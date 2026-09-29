@@ -1,6 +1,6 @@
 /**
  * Personalized Financial Structuring Engine for Rural Micro-Entrepreneurs.
- * Aligned with Smart India Hackathon 2026 - Problem Statement 26091 (Ministry of Social Justice and Empowerment).
+ * Ministry of Social Justice and Empowerment (MoSJE).
  * 
  * Automatically blends promoter margin, MoSJE capital subsidies, concessional term loans,
  * and working capital credit lines with rural cash-flow-aligned repayment schedules.

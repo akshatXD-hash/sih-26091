@@ -26,8 +26,8 @@ const fontMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kaarva | AI Hyper-Local Business Advisory & Financial Structuring (SIH-26091)",
-  description: "AI-driven hyper-local business advisory, local market demand intelligence, and personalized financial structuring for rural micro-entrepreneurs. Smart India Hackathon 2026 - PS 26091 (Ministry of Social Justice and Empowerment).",
+  title: "Kaarva | AI Hyper-Local Business Advisory & Financial Structuring",
+  description: "AI-driven hyper-local business advisory, local market demand intelligence, and personalized financial structuring for rural micro-entrepreneurs. Ministry of Social Justice and Empowerment (MoSJE).",
   icons: {
     icon: [
       { url: "/icon.png", type: "image/png" },

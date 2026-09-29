@@ -15,7 +15,7 @@ export function BrandMark({ href = "/", inverse = false }: { href?: string; inve
         <div className="flex items-center gap-2">
           <span className="text-xl font-serif font-black tracking-tight">Kaarva</span>
           <span className={`rounded-sm px-1.5 py-0.5 text-[9px] font-extrabold uppercase tracking-wider ${inverse ? "bg-[#e6c99a] text-black" : "bg-[#1E3A2B] text-[#F7F3E9]"}`}>
-            SIH 26091
+            MoSJE
           </span>
         </div>
         <span className={`text-[10px] tracking-normal font-sans font-medium mt-0.5 ${inverse ? "text-white/70" : "text-[#1E3A2B]/70"}`}>

@@ -70,7 +70,7 @@ export function BusinessAdvisoryStudio() {
           <div>
             <div className="flex items-center gap-2">
               <span className="rounded-md bg-[#1E3A2B] px-2.5 py-1 text-[11px] font-black uppercase tracking-wider text-[#F7F3E9]">
-                SIH-26091
+                MoSJE Advisory Engine
               </span>
               <span className="text-xs font-bold uppercase tracking-wider text-[#B85228]">
                 Ministry of Social Justice & Empowerment
@@ -455,7 +455,7 @@ export function BusinessAdvisoryStudio() {
                   <h4 className="text-lg font-black text-white">Detailed Project Report (DPR) Summary</h4>
                 </div>
                 <div className="rounded bg-white/10 px-2.5 py-1 text-xs font-mono font-bold text-[#e6c99a]">
-                  DPR Ref: SIH26091-{advisoryResult.trade.id.slice(0, 4).toUpperCase()}
+                  DPR Ref: KAARVA-{advisoryResult.trade.id.slice(0, 4).toUpperCase()}
                 </div>
               </div>
 
